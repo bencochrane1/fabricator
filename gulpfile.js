@@ -47,6 +47,13 @@ gulp.task('clean', function () {
 	return del([config.dest]);
 });
 
+gulp.task('serveprod', function() {
+  connect.server({
+    root: ['https://fabricator.herokuapp.com/'],
+    port: process.env.PORT || 5000, // localhost:5000
+    livereload: false
+  });
+});
 
 // styles
 gulp.task('styles:fabricator', function () {
