@@ -50,7 +50,7 @@ gulp.task('clean', function () {
 gulp.task('serveprod', function() {
 	console.log('PROCESS ENV PORT ############# ', process.env.PORT);
   connect.server({
-    root: ['https://fabricator.herokuapp.com/'],
+    root: 'dist',
     port: process.env.PORT || 5000, // localhost:5000
     livereload: false
   });
