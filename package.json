@@ -9,7 +9,7 @@
     "gulp": "gulp",
     "prestart": "npm install",
     "build": "npm install && gulp",
-    "start": "node node_modules/gulp/bin/gulp.js --dev",
+    "start": "gulp serveprod",
     "test": "npm run build"
   },
   "keywords": [
