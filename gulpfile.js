@@ -50,7 +50,7 @@ gulp.task('clean', function () {
 gulp.task('serveprod', function() {
 	console.log('PROCESS ENV PORT ############# ', process.env.PORT);
   connect.server({
-    root: 'dist',
+    root: 'app/dist',
     port: process.env.PORT || 5000, // localhost:5000
     livereload: false
   });
